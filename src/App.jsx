@@ -29,13 +29,13 @@ function App() {
   };
 
   return (
-    <div className="h-screen w-full bg-slate flex items-center justify-center">
+    <div className="h-screen w-full flex items-center justify-center">
       {loading ? (
         <LoadingScreen />
       ) : (
-        <div className="grid grid-cols-1 md:grid-cols-1 xl:grid-cols-2 h-screen w-full xl:h-[90%] xl:w-[90%] rounded shadow-container">
+        <div className="grid grid-cols-1 md:grid-cols-1 xl:grid-cols-2 h-screen w-full xl:h-[90%] xl:w-[90%] shadow-container">
           {/* Contêiner da imagem */}
-          <div className="hidden md:hidden xl:block bg-white rounded">
+          <div className="rounded-l-[10px] hidden md:hidden xl:block bg-white">
             <ImageContainer imageUrl={autocad2016} imageAlt={"AutoCAD"} />
           </div>
 

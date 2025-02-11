@@ -2,11 +2,13 @@ import "../App.css";
 
 function ImageContainer({ imageUrl, imageAlt }) {
   return (
-    <img
-      src={imageUrl}
-      alt={imageAlt}
-      className="w-full h-full object-cover"
-    />
+    <div>
+      <img
+        src={imageUrl}
+        alt={imageAlt}
+        className="rounded-l-[10px] object-cover"
+      />
+    </div>
   );
 }
 
