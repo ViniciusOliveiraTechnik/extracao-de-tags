@@ -1,11 +1,17 @@
-function Container({ children, itemsCenter, justifyCenter, flex, shadow }) {
+function Container({
+  children,
+  itemsCenter,
+  justifyCenter,
+  flex,
+  shadow,
+  bgColor,
+}) {
   return (
     <div
-      className={`bg-white p-4
+      className={`p-4
       ${flex ? "flex flex-col gap-3" : ""} 
       ${itemsCenter ? "items-center" : ""} 
-      ${justifyCenter ? "justify-center" : ""} 
-      ${shadow ? "shadow-lg" : ""} rounded-[8px]`}
+      ${justifyCenter ? "justify-center" : ""} `}
     >
       {children}
     </div>

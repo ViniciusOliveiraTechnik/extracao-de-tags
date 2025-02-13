@@ -31,7 +31,7 @@ function App() {
   // };
 
   return (
-    <Container>
+    <Container bgColor="bg-black">
       <MainForm />
     </Container>
 

@@ -1,6 +1,6 @@
 import { CloudUpload } from "lucide-react";
 
-function FileUploadButton() {
+function FileUploadButton({ onChange }) {
   return (
     <>
       <label
@@ -11,6 +11,7 @@ function FileUploadButton() {
         <span>Selecionar Arquivo</span>
       </label>
       <input
+        onChange={onChange}
         className="hidden"
         type="file"
         name="upload-file"
