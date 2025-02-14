@@ -1,7 +1,9 @@
-import Title from "../Title/Title";
-
-function Form({ children }) {
-  return <form className="flex flex-col gap-3 text-[16px] md:text-[20px]">{children}</form>;
+function Form({ children, extraStyles="" }) {
+  return (
+    <form className={`flex gap-5 flex-col text-[16px] md:text-[20px] ${extraStyles}`}>
+      {children}
+    </form>
+  );
 }
 
 export default Form;
