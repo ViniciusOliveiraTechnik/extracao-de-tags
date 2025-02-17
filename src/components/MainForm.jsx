@@ -18,11 +18,11 @@ function MainForm() {
 
   return (
     <Container
-      rounded
       flex
+      padding="p-6"
+      rounded
       shadow
-      padding={"p-6"}
-      extraStyles="w-[90%] h-[55%]"
+      extraStyles="w-[90%] h-[60%] md:w-[60%] md:h-[65%]"
     >
       <Container>
         <Title>Extração de TAGs</Title>
